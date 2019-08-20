@@ -1,0 +1,39 @@
+<div class="page-header">
+	<div class="page-title">
+		<h3>数据源</h3>
+		<em>Data Source</em>
+	</div>
+	<div class="page-desc">
+		<p>数据源保存着您训练或预测数据的信息，包括位置、属性名、属性类型等。
+		<br/>读取数据源后，您要设置其特征和目标属性，并设置属性类型。创建完成后，你可以对数据进行评估。</p>
+		 
+	</div>
+</div>
+<div class="page-body">
+	<div class="table-top clearfix" id="table-model-overview_top">
+		<div class="pull-left">
+			<a class="btn btn-reload"></a> <a class="btn btn-add">新建数据源</a>
+
+		</div>
+		<div class="pull-right">
+			<label> <input type="search" name="name"
+				class="form-control input-sm table-filter" placeholder="数据源名称">
+				<a class="btn btn-search"></a>
+			</label>
+		</div>
+	</div>
+	<table class="table table-primary table-striped" id="table-model-overview">
+		<thead>
+			<tr>
+				<th><label><input type="checkbox" class="selectAll"></label></th>
+				<th>名称</th>
+				<th>数据源</th>
+				<th>创建时间</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	{{include('/ml_source/create_source.html')}}
+</div>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="renderer" content="webkit">
+    <title>Insight ML</title>
+    <!-- favicon -->
+    <base href="">
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="bookmark" href="resources/images/favicon.ico" type="image/x-icon">
+    <!-- styles -->
+    <link href="yfjs-lib/original/css/base.css" rel="stylesheet" type="text/css">
+    <link href="resources/styles/flow.css" rel="stylesheet" type="text/css">
+    <link href="resources/styles/core.css" rel="stylesheet" type="text/css">
+    <link href="resources/styles/login.css" rel="stylesheet" type="text/css">
+    <!-- scripts -->
+    <script src="yfjs-lib/original/js/yfjs.js"
+            data-cache="true"
+            data-main="app"
+            data-require-base="app">
+    </script>
+</head>
+<body class="loading">
+    <div class="app-loader-page" id="app-loader-page">
+        <div class="loader" data-spy="loader"></div>
+    </div>
+    <script type="text/html" id="ui-select">
+        {{if list}}
+        {{if wrapper}}
+        <select{{if id}} id="{{id}}"{{/if}}{{if name}} name="{{name}}"{{/if}}{{if className}} class="{{className}}"{{/if}}{{if multiple}} multiple="multiple"{{/if}}{{if attrs}}{{each attrs}} {{$index}}="{{$value}}"{{/each}}{{/if}}>
+        {{/if}}
+        {{each list as item i}}
+            <option index="{{i}}" {{if item.id}} id="{{item.id}}"{{/if}}  {{if item.value}} value="{{item.value}}"{{else}}  value="{{item.id || item.name || ''}}"  {{/if}}   {{if item.selected}} selected="selected"{{/if}}{{if item.attrs}}{{each item.attrs}} {{$index}}="{{$value}}"{{/each}}{{/if}}>{{item.name || item.id || item.value || item.label}}</option>
+            {{if item.list}}
+            <optgroup index="{{i}}" label="{{item.label}}"{{if item.attrs}}{{each item.attrs}} {{$index}}="{{$value}}"{{/each}}{{/if}}>
+                {{each item.list as opt j}}
+                <option index="{{i}}{{j}}" {{if opt.id}} id="{{opt.id}}"{{/if}}   {{if value}}value="{{opt.value}}"{{/if}} {{if opt.selected}} selected="selected"{{/if}}{{if opt.attrs}}{{each opt.attrs}} {{$index}}="{{$value}}"{{/each}}{{/if}}>{{item.name || item.id || item.value || item.label}}</option>
+                {{/each}}
+            </optgroup>
+            {{/if}}
+        {{/each}}
+        {{if wrapper}}
+        </select>
+        {{/if}}
+        {{/if}}
+    </script>
+</body>
+</html>

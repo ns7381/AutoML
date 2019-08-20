@@ -1,0 +1,6 @@
+/data
+/dist
+/.idea
+/.gradle
+/.ml-app.log
+*.pyc

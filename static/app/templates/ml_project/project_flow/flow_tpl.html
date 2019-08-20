@@ -1,0 +1,37 @@
+<div class="form-horizontal form-static form-align-left">
+    <div class="form-group">
+        <label class="control-label col-em-7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名称：</label>
+
+        <div class="col-em-offset-7">
+            <p class="form-control-static">{{ name }}</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-em-7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPU：</label>
+
+        <div class="col-em-offset-7">
+            <p class="form-control-static">{{ cores }}核</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-em-7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;内存：</label>
+
+        <div class="col-em-offset-7">
+            <p class="form-control-static">{{ memory }}MB</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-em-7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;描述：</label>
+
+        <div class="col-em-offset-7">
+            <p class="form-control-static">{{ description }}</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-em-7">创建时间：</label>
+
+        <div class="col-em-offset-7">
+            <p class="form-control-static">{{ create_time.substring(0, 19) }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+{{ each params as param i }}
+<div class="form-group {{ if param.is_required }}form-required{{ /if }}">
+
+    <label for="{{ param.name }}">{{ param.label }}：</label>
+
+
+    {{ if param.type == 'fields' || param.type == 'field'}}
+    <button type="button" name="{{ param.name }}" class="btn btn-default btn-block" id="fields-chosen-btn"
+            data-node-id="{{ id }}" data-param-type="{{ param.type }}">
+        {{ if param.value && typeof param.value == 'string'}}
+        已选择【{{ param.value }}】字段
+        {{ else if param.value && typeof param.value == 'object'}}
+        已选择{{ param.value.length }}个字段
+        {{ else }}
+        请选择特征列
+        {{/if}}
+    </button>
+    <br>
+    <input class="form-control" required type="hidden" name="{{ param.name }}" value="{{ if !param.value || typeof param.value == 'string'}}{{ param.value }}{{ else }}{{ param.value.join(',') }}{{ /if }}">
+
+
+    {{ else if param.type == 'list' }}
+    <select name="{{ param.name }}" class="form-control chosen-select">
+        {{ each param.validation.inList as ele ele_i }}
+        <option value="{{ ele }}">{{ ele }}</option>
+        {{ /each }}
+    </select>
+
+
+
+    {{ else if param.type == 'bool' }}
+    <input type="checkbox" name="{{ param.name }}" data-toggle="switcher" data-on-text="是" data-off-text="否" checked>
+
+
+
+    {{ else }}
+    <input class="form-control" name="{{ param.name }}" id="param" data-type="{{ param.type }}" data-node-id="{{ id }}"
+           placeholder="{{ param.default_value }}" value="{{ param.value || param.default_value }}"/>
+
+
+
+
+    {{ if param.description }}
+    <p class="help-block">{{ param.description }}</p>
+    {{ /if }}
+    {{ /if }}
+</div>
+{{ /each }}

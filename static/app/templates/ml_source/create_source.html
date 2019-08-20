@@ -1,0 +1,85 @@
+<form class="form-horizontal" id="form-data-source">
+    <div class="form-group form-required">
+        <label class="control-label col-sm-3">数据源名称：</label>
+        <div class="col-sm-9">
+            <input class="form-control" name="name" id="source_name"/>
+        </div>
+    </div>
+    <div class="form-group form-required">
+        <label class="control-label col-sm-3">数据来源：</label>
+        <div class="col-sm-9">
+            <select name="format" class="form-control chosen-select" id="format">
+                <option value=""></option>
+                <option value="csv">csv文件</option>
+                <option value="text">text文件</option>
+                <option value="json">json文件</option>
+                <option value="orc">orc文件</option>
+                <option value="libsvm">libsvm文件</option>
+                <option value="parquet">parquet文件</option>
+                <option value="mysql">mysql数据库</option>
+                <option value="hive2">hive2</option>
+            </select>
+        </div>
+    </div>
+    <div id="file">
+        <div class="form-group form-required">
+            <label class="control-label col-sm-3">文件路径：</label>
+            <div class="col-sm-9">
+                <input class="form-control" name="file_path" id="file_path"/>
+            </div>
+        </div>
+        <div class="form-group form-required">
+            <label class="control-label col-sm-3">字段分隔符：</label>
+            <div class="col-sm-9">
+                <input class="form-control" name="delimiter" id="delimiter"/>
+            </div>
+        </div>
+        <div class="form-group form-required">
+            <label class="control-label col-sm-3">包含表头：</label>
+            <label class="radio-inline">
+                <input type="radio" name="header" id="includeHead-yes" value="True"> 是
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="header" id="includeHead-no" value="False">否
+            </label>
+        </div>
+    </div>
+    <div id="jdbc" style="display: none">
+        <div class="form-group form-required">
+            <label class="control-label col-sm-3">数据库地址：</label>
+            <div class="col-sm-9">
+                <input class="form-control" name="db_host" id="db_host"/>
+            </div>
+        </div>
+        <div class="form-group form-required">
+            <label class="control-label col-sm-3">数据库端口：</label>
+            <div class="col-sm-9">
+                <input class="form-control" name="db_port" id="db_port"/>
+            </div>
+        </div>
+        <div class="form-group form-required">
+            <label class="control-label col-sm-3">数据库：</label>
+            <div class="col-sm-9">
+                <input class="form-control" name="db_database" id="db_database"/>
+            </div>
+        </div>
+        <div class="form-group form-required">
+            <label class="control-label col-sm-3">数据库表：</label>
+            <div class="col-sm-9">
+                <input class="form-control" name="dbtable" id="dbtable"/>
+            </div>
+        </div>
+        <div class="form-group form-required">
+            <label class="control-label col-sm-3">用户名：</label>
+            <div class="col-sm-9">
+                <input class="form-control" name="user" id="user"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3">密码：</label>
+            <div class="col-sm-9">
+                <input class="form-control" name="password" id="password"/>
+            </div>
+        </div>
+    </div>
+</form>

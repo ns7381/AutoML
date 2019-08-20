@@ -1,0 +1,63 @@
+<div class="page-body">
+	Insight ML介绍
+	<div class="media">
+		<div class="media-left">
+			<img src="{{getResourceUrl('images/5.jpg')}}">
+		</div>
+		<div class="media-body">
+			浪潮自主研发的新一代机器学习产品。
+			<br>基于内存计算和迭代计算，可以在分布式集群上对海量数据进行建模，处理更快、预测更准，具有稳定可靠、容易扩展的特点。支持成熟、丰富的机器学习算法，生成的分类、回归、推荐等模型可以在多种行业和场景中使用。
+		</div>
+	</div>
+	Insight ML使用流程
+	<div class="row media-list">
+		<div class="col-md-3">
+			<div class="media">
+				<div class="media-title">数据源</div>
+				<div class="media-top">
+					<img src="{{getResourceUrl('images/1.jpg')}}">
+				</div>
+				<div class="media-desc">
+					数据源保存着您训练或预测数据的信息，包括位置、属性名、属性类型等。创建ML项目和批量预测时会用它来指定您的输入数据。
+				</div>
+				<a class="btn pull-right" href="{{getUrl('/ml_source/source_overview')}}">创建</a>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="media">
+				<div class="media-title">ML项目</div>
+				<div class="media-top">
+					<img src="{{getResourceUrl('images/2.jpg')}}">
+				</div>
+				<div class="media-desc">
+					ML项目管理机器学习模型的配置信息，包括训练的数据源、算法、取样比例等，通过ML项目可以创建ML模型。
+				</div>
+				<a class="btn pull-right" href="{{getUrl('/ml_project/project_overview')}}">创建</a>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="media">
+				<div class="media-title">ML模型</div>
+				<div class="media-top">
+					<img src="{{getResourceUrl('images/3.jpg')}}">
+				</div>
+				<div class="media-desc">
+					系统会帮您保存每个版本的ML模型。您可以在模型工厂查看模型的评估结果并进行预测，模型发布后还可以使用其预测API。
+				</div>
+				<a class="btn pull-right" href="{{getUrl('/ml_model/model_overview')}}">查看</a>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="media">
+				<div class="media-title">批量预测</div>
+				<div class="media-top">
+					<img src="{{getResourceUrl('images/4.jpg')}}">
+				</div>
+				<div class="media-desc">
+					批量预测可以帮助您预测海量数据，预测成功后可下载预测结果。
+				</div>
+				<a class="btn pull-right" href="{{getUrl('/ml_predict/predict_overview')}}">创建</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,40 @@
+<div class="page-header">
+	<div class="page-title">
+		<h3>Notebook</h3>
+		<em>Notebook</em>
+	</div>
+	<div class="page-desc">
+		<p>查看批量预测任务执行状态，执行成功则提供结果文件下载。
+		<!-- <br/>您可以将这些资源直接共享给其他数据空间，或者设置为开放状态以允许其他数据空间进行订阅。共享和订阅均授予【读】权限。</p>
+		 -->
+	</div>
+</div>
+<div class="page-body">
+	<div class="table-top clearfix" id="table-predict-overview_top">
+		<div class="pull-left">
+			<a class="btn btn-reload"></a> <a class="btn btn-add">创建Notebook</a>
+		</div>
+		<div class="pull-right">
+            <label>
+                <input type="search" name="name" class="form-control input-sm table-filter" placeholder="名称">
+                <a class="btn btn-search"></a>
+            </label> 
+        </div>
+	</div>
+	<table class="table table-primary table-striped" id="table-predict-overview">
+		<thead>
+			<tr>
+				<th><label><input type="checkbox" class="selectAll"></label></th>
+				<th>名称</th>
+				<th>路径</th>
+				<th>大小</th>
+				<th>创建时间</th>
+                <th>修改时间</th>
+                <th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+</div>
+{{include('/ml_notebook/create_notebook.html')}}

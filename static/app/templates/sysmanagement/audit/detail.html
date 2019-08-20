@@ -1,0 +1,100 @@
+<div class="page-body">
+    <div class="clearfix">
+        <a class="btn btn-back" href="#/sysmanagement/audit">返回</a>
+    </div>
+    <div class="form-fieldset form-horizontal form-align-left">
+        <fieldset>
+            <legend>
+                <i class="icon-square"></i>基本信息
+            </legend>
+            <div class="form-static">
+                <div class="form-group">
+                    <label class="col-em-5 control-label">记录时间：</label>
+                    <div class="col-em-offset-5">
+                        <p class="form-control-static">{{create_time}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-em-5 control-label">操作名称：</label>
+                    <div class="col-em-offset-5">
+                        <p class="form-control-static">{{name}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-em-5 control-label">登陆账号：</label>
+                    <div class="col-em-offset-5">
+                        <p class="form-control-static">{{login_name}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-em-5 control-label">登录结果：</label>
+                    <div class="col-em-offset-5">
+                        <p class="form-control-static">{{result}}</p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <i class="icon-square"></i>请求信息
+            </legend>
+            <div class="form-static">
+                <div class="form-group">
+                    <label class="col-em-6 control-label">请求的方法：</label>
+                    <div class="col-em-offset-6">
+                        <p class="form-control-static">{{request_method}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-em-6 control-label">请求的URL：</label>
+                    <div class="col-em-offset-6">
+                        <p class="form-control-static">{{request_url}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-em-6 control-label">查询字符串：</label>
+                    <div class="col-em-offset-6">
+                        <p class="form-control-static">{{query_string}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-em-7 control-label">请求的Body：</label>
+                    <div class="col-em-offset-7">
+                        <p class="form-control-static">{{request_body}}</p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <i class="icon-square"></i>客户端&服务器信息
+            </legend>
+            <div class="form-static">
+                <div class="form-group">
+                    <label class="col-em-7 control-label">客户端IP地址：</label>
+                    <div class="col-em-offset-7">
+                        <p class="form-control-static">{{remote_ip}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-em-8 control-label">客户端地域地址：</label>
+                    <div class="col-em-offset-8">
+                        <p class="form-control-static">{{remote_addr}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-em-7 control-label">服务器IP地址：</label>
+                    <div class="col-em-offset-7">
+                        <p class="form-control-static">{{server_ip}}</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-em-6 control-label">服务器名称：</label>
+                    <div class="col-em-offset-6">
+                        <p class="form-control-static">{{server_name}}</p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>

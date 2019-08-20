@@ -1,0 +1,93 @@
+[
+  {
+    "is_leaf": false,
+    "name": "\u6570\u636e\u6e90",
+    "up": 0,
+    "module": "",
+    "id": "datasource",
+    "down": 1,
+    "parent_id": "root",
+    "order_num": 1,
+    "is_hide": false,
+    "method": "read",
+    "icon": "fa-folder-o"
+  },
+  {
+    "is_leaf": false,
+    "name": "\u5df2\u4fdd\u5b58\u6a21\u578b",
+    "up": 1,
+    "module": "",
+    "id": "model",
+    "down": 1,
+    "parent_id": "root",
+    "order_num": 2,
+    "is_hide": false,
+    "method": "read",
+    "icon": "fa-folder-o"
+  },
+  {
+    "is_leaf": false,
+    "name": "\u6e90/\u76ee\u6807",
+    "up": 0,
+    "module": "",
+    "id": "st",
+    "down": 0,
+    "parent_id": "root",
+    "order_num": 3,
+    "is_hide": false,
+    "method": "read",
+    "icon": "fa-folder-o"
+  },
+  {
+    "is_leaf": false,
+    "name": "\u6570\u636e\u9884\u5904\u7406",
+    "up": 0,
+    "module": "",
+    "id": "pre",
+    "down": 0,
+    "parent_id": "root",
+    "order_num": 4,
+    "is_hide": false,
+    "method": "read",
+    "icon": "fa-folder-o"
+  },
+  {
+    "is_leaf": false,
+    "name": "\u7279\u5f81\u5de5\u7a0b",
+    "up": 0,
+    "module": "",
+    "id": "feature",
+    "down": 0,
+    "parent_id": "root",
+    "order_num": 5,
+    "is_hide": false,
+    "method": "read",
+    "icon": "fa-folder-o"
+  },
+  {
+    "is_leaf": false,
+    "name": "\u7edf\u8ba1\u5206\u6790",
+    "up": 0,
+    "module": "",
+    "id": "statistic",
+    "down": 0,
+    "parent_id": "root",
+    "order_num": 6,
+    "is_hide": false,
+    "method": "read",
+    "icon": "fa-folder-o"
+  },
+  {
+    "is_leaf": false,
+    "name": "\u673a\u5668\u5b66\u4e60",
+    "up": 0,
+    "module": "",
+    "id": "ml",
+    "down": 0,
+    "parent_id": "root",
+    "order_num": 7,
+    "is_hide": false,
+    "method": "read",
+    "icon": "fa-folder-o"
+  }
+]

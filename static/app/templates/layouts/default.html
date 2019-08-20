@@ -1,0 +1,61 @@
+<header>
+	<div class="clearfix container">
+		<div id="header-nav">
+			<nav role="navigation" index="1">
+				<ul>
+					<li class="nav-animator"></li>
+				</ul>
+			</nav>
+			<nav role="navigation" index="2">
+				<span>Insight ML</span>
+				<ul>
+					<li class="dropdown" index="user">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<span class="global-uname">
+								{{getLoginName()}}
+							</span>
+							<i class="fa fa-angle-down fa-fw"></i>
+							<img class="avatar" src="">
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="{{getUrl('/resetpwd')}}">
+									<i class="fa fa-user fa-pencil-square-o"></i>修改密码
+								</a>
+							</li>
+							<li>
+								<a href="{{getUrl('/logout')}}">
+									<i class="fa fa-sign-out fa-fw"></i>退出
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<div id="page-main">
+	<aside>
+		<h2 class="aside-title">
+			<a class="header-logo" href="{{getUrl('/home')}}"></a>
+		</h2>
+		<ul id="side-bar" class="sidebar-nav nav" role="navigation"
+			tabindex="1">
+
+			{{if sideList && sideList.length}}
+				{{each sideList as list i}}
+					<li index="{{i+1}}">
+						<a href="#{{list.link}}" data-reload="true">
+							<p><i class="fa {{list.icon}}"></i></p>
+							<p>{{list.name}}</p>
+						</a>
+					</li>
+				{{/each}}
+			{{/if}}
+		</ul>
+	</aside>
+	<div class="container clearfix">
+		<div class="page-content clearfix">{{body}}</div>
+	</div>
+</div>

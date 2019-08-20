@@ -1,0 +1,66 @@
+<div class="page-header">
+	<div class="page-title">
+		<h3>审计日志</h3>
+		<em>Audit Log</em>
+	</div>
+	<div class="page-desc">
+		<p>审计日志用于记录用户的每一个重要请求，包括操作人信息、请求信息、请求资源信息、请求客户端信息、处理请求的服务端信息等，管理员可以方便高效的根据这些信息对系统进行有针对性的安全审计。</p>
+	</div>
+</div>
+<div class="page-body">
+    <div class="table-top clearfix">
+        <div class="pull-left">
+            <a class="btn btn-reload"></a>
+        </div>
+        <div class="pull-right">
+            <label>
+                <div class="input-group date form_datetime col-md-5"  data-date-format="yyyy/mm/dd hh:ii:ss" data-link-field="dtp_input1" style="width:170px;">
+                    <input name="beginTime" class="form-control input-search table-filter" style="width:170px;" type="search" placeholder="起始时间">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                </div>
+            </label>
+            <label>
+                <div class="input-group date form_datetime col-md-5"  data-date-format="yyyy/mm/dd hh:ii:ss" data-link-field="dtp_input1" style="width:170px;">
+                    <input name="endTime" class="form-control input-search table-filter" style="width:170px;" type="search" placeholder="截止时间">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                </div>
+            </label>
+             <label>
+                <select id="request_method" name="requestMethod" class="form-control table-filter">
+                	<option value="">请求方法</option>
+                	<option value="GET">GET</option>
+                	<option value="POST">POST</option>
+                	<option value="PUT">PUT</option>
+                	<option value="DELETE">DELETE</option>
+                	<option value="HEAD">HEAD</option>
+                	<option value="PATCH">PATCH</option>
+                	<option value="OPTIONS">OPTIONS</option>
+                	<option value="TRACE">TRACE</option>
+                </select>
+            </label>
+            <label>
+                <input type="search" name="filter" class="form-control input-search table-filter" placeholder="操作人">
+                <a class="btn btn-search"></a>
+            </label>
+        </div>
+    </div>
+    <table class="table table-primary table-striped" id="AuditTable">
+                <thead>
+                    <tr>
+                        <th>
+                            <label><input type="checkbox" class="selectAll"></label>
+                        </th>
+                        <th>操作人</th>
+                        <th>请求URL</th>
+                        <th>请求方法</th>
+                        <th>结果</th>
+                        <th>操作时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+</div>
