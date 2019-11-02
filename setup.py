@@ -16,7 +16,7 @@ setuptools.setup(
     install_requires=[
         'matplotlib==2.1.2',
         'pandas==0.22.0',
-        'Flask==0.12.2',
+        'Flask==1.0',
         'Flask_SQLAlchemy==2.1',
         'Flask_RESTful==0.3.6',
         'pyspark==2.2.1',
