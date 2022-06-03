@@ -19,7 +19,7 @@ setuptools.setup(
         'Flask==0.12.2',
         'Flask_SQLAlchemy==2.1',
         'Flask_RESTful==0.3.6',
-        'pyspark==2.2.1',
+        'pyspark==3.1.3',
         'gevent==1.2.2',
         'Flask_Security==3.0.0',
         'flask_marshmallow==0.8.0',
