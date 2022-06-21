@@ -23,7 +23,7 @@ setuptools.setup(
         'gevent==1.2.2',
         'Flask_Security==3.0.0',
         'flask_marshmallow==0.8.0',
-        'numpy==1.14.0',
+        'numpy==1.22.0',
         'gevent_websocket==0.10.1',
         'scikit_learn==0.19.1',
         'marshmallow-sqlalchemy==0.13.2',
